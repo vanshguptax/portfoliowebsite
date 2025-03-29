@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9c1a04b159.js" crossorigin="anonymous"></script>
+  
+</head>
+<body class="bg-gray-100 text-gray-900">
+ <!-- Navbar -->
+
+<nav class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/80 backdrop-blur-md shadow-lg rounded-full px-8 py-3  z-50 max-w-3xl w-full">
+    <div class="flex justify-between items-center ">
+        
+        <!-- Navigation Links (Hidden on Small Screens) -->
+        <ul class="hidden md:flex space-x-6 mx-auto">
+            <li><a href="#home" onclick="showSection('home'); setActive(this)" class="nav-link text-gray-700 hover:text-blue-500 transition">Home</a></li>
+            <li><a href="#about" onclick="showSection('about'); setActive(this)" class="nav-link text-gray-700 hover:text-blue-500 transition">About</a></li>
+            <li><a href="#projects" onclick="showSection('projects'); setActive(this)" class="nav-link text-gray-700 hover:text-blue-500 transition">Projects</a></li>
+            
+            <li><a href="#contact" onclick="showSection('contact'); setActive(this)" class="nav-link text-gray-700 hover:text-blue-500 transition">Contact</a></li>
+            
+        </ul>
+
+       
+    </div>
+</nav>
+<div class="pb-20"></div>
+
+
+
+<!-- Download Resume Button (Separate from Navbar) -->
+<a href="vansh_resume.pdf" download class="fixed top-4 right-6 bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition shadow-lg">
+    Download Resume
+</a>
+
+
+
+
+
+<!-- Hero Section -->
+    
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center p-6">
+    <h1 class="text-4xl lg:text-5xl pt-22 font-bold">
+        Hi, I'm <span class="text-blue-500">Vansh Gupta</span>
+    </h1>
+    <p class="text-lg text-gray-600 mt-2">Web Developer | Designer | Coder</p>
+
+    <!-- Social Media Links -->
+    <div class="flex space-x-6 mt-4">
+        <a href="https://www.instagram.com/vansh_reads/" target="_blank" class="text-gray-600 hover:text-pink-500">
+            <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="https://x.com/Vanshreads?t=Mi0tj-PVOZTewHnspYfzcg&s=09" target="_blank" class="text-gray-600 hover:text-blue-400">
+            <i class="fab fa-x-twitter text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vansh-gupta-598801204/" target="_blank" class="text-gray-600 hover:text-blue-600">
+            <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="https://github.com/vanshguptax" target="_blank" class="text-gray-600 hover:text-black">
+            <i class="fab fa-github text-2xl"></i>
+        </a>
+    </div>
+
+   <!-- Skills Section -->
+
+   <div class="max-w-6xl mx-auto text-center pt-32">
+    <h2 class="text-3xl font-bold text-gray-800">My Skills</h2>
+    <p class="text-lg text-gray-600 mt-2">Technologies I work with:</p>
+
+    <!-- Skill Capsules -->
+    <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            HTML
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            CSS
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            JavaScript
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            Digital Marketing
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            Content Creation
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            Git
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            Social Media Management
+        </span>
+        <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-400 hover:text-white transition-all">
+            C++
+        </span>
+    </div>
+ </div>
+
+ <div class="flex flex-wrap justify-center gap-4 mt-8">
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        Web Development
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        UI/UX Design
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        Python
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        AI/ML
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        AR/VR Creation
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        Github
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        DBMS
+    </span>
+    <span class="px-4 py-2 bg-white border border-gray-300 rounded-full shadow-sm text-gray-700 font-semibold text-sm hover:bg-blue-500 hover:text-white transition-all">
+        Graphic Design
+    </span>
+</div>
+</div>
+
+
+
+   
+
+ </section>
+
+ <!-- Contact Section -->
+ <section id="contact" class="max-w-3xl mx-auto p-6 mt-10 text-center hidden">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Contact Me</h1>
+    
+    <div class="bg-white p-6 rounded-2xl shadow-xl flex flex-col md:flex-row items-center md:items-start">
+        
+        <div class="w-full md:w-1/2 p-4">
+            <h2 class="text-2xl font-semibold pb-5 text-gray-700">Get in Touch</h2>
+            <p class="text-gray-600 mt-2">Feel free to reach out to me for any queries or collaboration opportunities!</p>
+            <div class="mt-4 space-y-3">
+                <p class="flex items-center space-x-3"><span class="text-lg">📞</span> <span>+91 7051366411</span></p>
+                <p class="flex items-center space-x-3"><span class="text-lg">✉️</span> <span>vanshguptax@gmail.com</span></p>
+                <p class="flex items-center space-x-3"><span class="text-lg">📍</span> <span>2/81,R S Pura,Jammu,J&K,India</span></p>
+            </div>
+
+        </div>
+
+        <div class="w-full md:w-1/2 p-4">
+          <form action="https://formspree.io/f/xwplnbyy" method="POST" class="bg-gray-50 p-6 rounded-xl shadow">
+            <label class="block text-gray-700">Name</label>
+            <input type="text" name="name" class="w-full p-2 border rounded mt-1" required>
+        
+            <label class="block text-gray-700 mt-3">Email</label>
+            <input type="email" name="email" class="w-full p-2 border rounded mt-1" required>
+        
+            <label class="block text-gray-700 mt-3">Message</label>
+            <textarea name="message" class="w-full p-2 border rounded mt-1" required></textarea>
+        
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700">Send</button>
+        </form>
+        
+        </div>
+    </div>
+</div>
+ </section>
+
+       
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="max-w-3xl mx-auto p-6 pb-6 hidden">
+      <div class="pt-20 pb-16">
+        <h2 class="text-2xl text-center font-semibold mb-4">About Me</h2>
+
+        <div class="bg-blue-100 shadow-lg rounded-2xl p-6">
+            <h3 class="text-3xl font-bold text-gray-800 text-center">🚀 Developer | Designer | Writer</h3>
+            <p class="text-gray-700 mt-4">
+                Hey, I’m <span class="font-semibold text-gray-900">Vansh Gupta</span>, a tech enthusiast passionate about 
+                <span class="font-medium">coding, design, and storytelling</span>. With a background in 
+                <span class="text-indigo-600 font-semibold">Computer Science Engineering</span>, I specialize in 
+                <span class="text-indigo-600 font-semibold">full-stack development, AI/ML, blockchain, and computer vision</span>.
+            </p>
+
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800">📌 What I Do</h3>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <li><strong>Software Development</strong>: React, C++, Python, JavaScript</li>
+                    <li><strong>Machine Learning & AI</strong>: Computer vision, stock prediction, handwriting detection</li>
+                    <li><strong>Blockchain & Web3</strong>: Real estate on blockchain, IPFS, MetaMask</li>
+                    <li><strong>Graphic Design</strong>: UI/UX, product design, branding</li>
+                    <li><strong>Writing</strong>: Blogging, poetry, historical narratives</li>
+                </ul>
+            </div>
+
+            <p class="mt-6 text-gray-700">
+                I thrive on <span class="font-semibold">learning, experimenting, and building solutions</span> that make an impact. 
+                Let’s connect and create something amazing! 🚀
+            </p>
+        </div>
+
+       
+    </div>
+    
+
+      <!-- time line -->
+      <div class="max-w-7xl shadow-lg rounded-2xl p-6  bg-gray-100  mx-auto ">
+    
+        <!-- First section - Image on right, text on left -->
+        <div class="flex flex-col md:flex-row items-center mb-24 gap-8 md:gap-12">
+          <div class="w-full md:w-1/2 space-y-4 md:pr-8">
+            <h2 class="text-2xl font-bold text-gray-800">
+             Outstanding Volunteer Award
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Receiving the Outstanding Volunteer Award from Sandeep Jain (Founder of GeeksforGeeks) and the Assistant Dean of Chandigarh University was a proud moment. It recognized my efforts in IEEE, from organizing events to building a tech community.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="/images/t1.png" 
+              alt="Innovative Solutions" 
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+        
+        <!-- Second section - Image on left, text on right -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+          <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="images/t2.png" 
+              alt="Customer Experience" 
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-full md:w-1/2 space-y-4 md:pl-8">
+            <h2 class="text-2xl font-bold text-gray-800">
+              AIU Debate Competition
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I represented my university in the AIU Debate Competition, speaking on "One Nation, One Election." It was a challenging yet enriching experience, where I had to present well-researched arguments with clarity and confidence. 
+            </p>
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="max-w-7xl pt-28  shadow-lg rounded-2xl p-6  bg-gray-100 mx-auto ">
+    
+        <!-- First section - Image on right, text on left -->
+        <div class="flex flex-col md:flex-row items-center mb-24   gap-8 md:gap-12">
+          <div class="w-full md:w-1/2 space-y-4 md:pr-8">
+            <h2 class="text-2xl font-bold text-gray-800">
+              Hackathon on IEEE Day
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I participated in a Hackathon on IEEE Day, where my team and I built a Resume Building Tool. It was an exciting challenge that combined innovation with real-world utility. Developing a tool that simplifies resume creation pushed my problem-solving skills, and seeing it take shape during the hackathon made the experience even more rewarding.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="images/t3.png" 
+              alt="Innovative Solutions" 
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+        
+        <!-- Second section - Image on left, text on right -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+          <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="images/t4.png" 
+              alt="Customer Experience" 
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        
+          <div class="w-full md:w-1/2 space-y-4 md:pl-8">
+            <h2 class="text-2xl font-bold text-gray-800">
+              NSS Free Medical Camp
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I volunteered for the NSS Free Medical Camp in Gharuan, Punjab, assisting doctors and organizing resources to help the local community. It was a humbling experience that deepened my understanding of the importance of healthcare accessibility. Contributing to this initiative reinforced my belief in the power of service and collective effort.
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="max-w-7xl pt-28 shadow-lg rounded-2xl p-6  bg-gray-100 mx-auto ">
+    
+        <!-- First section - Image on right, text on left -->
+        <div class="flex flex-col md:flex-row items-center mb-24 gap-8 md:gap-12">
+          <div class="w-full md:w-1/2 space-y-4 md:pr-8">
+            <h2 class="text-2xl font-bold text-gray-800">
+              World Book Fair
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              
+At the World Book Fair, I had the incredible experience of getting my books signed by Akshat Gupta. Meeting the author in person, exchanging a few words, and holding a signed copy felt surreal. It was a moment of inspiration, reminding me of my own journey with writing and storytelling.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="images/t5.png" 
+              alt="Innovative Solutions" 
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+        
+        <!-- Second section - Image on left, text on right -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+          <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="images/t6.png" 
+              alt="Customer Experience" 
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="w-full md:w-1/2 space-y-4 md:pl-8">
+            <h2 class="text-2xl font-bold text-gray-800">
+              Semiconductor Lab Visit
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              On the International Day of Light, I visited the Semiconductor Lab at PEC, exploring the fascinating world of chip fabrication and nanotechnology. Seeing cutting-edge research up close and understanding its real-world impact was an eye-opening experience. It deepened my appreciation for the science that powers modern technology.
+            </p>
+          </div>
+        </div>
+      </div>
+       <!-- time line -->
+
+       
+
+       </div>
+    </section>
+
+   
+ 
+    <!-- Projects Section -->
+  <section id="projects" class="max-w-3xl mx-auto p-6 mt-10 hidden">
+   
+    <h5  class="pt-20">
+        "Here are some of the projects I've worked on, blending creativity with technology to solve real-world problems. Each project reflects my passion for coding, design, and innovation."
+    </h5>
+
+    <div class="grid grid-cols-1 pt-20 md:grid-cols-3 gap-6">
+
+      <!-- Project 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold">Block Estate</h3>
+            <a href="https://block-estate-rodhdnqy1-0x0ayush.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">
+            Block Estate is a blockchain-powered real estate platform ensuring secure, transparent transactions with IPFS storage and MetaMask payments.
+          </p>
+        </div>
+        <div class=" px-6 py-3">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React</span>
+            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">IPFS</span>
+            <span class="px-2 py-1 bg-red-100 text-green-800 text-xs rounded-full">Solidity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold">Fake Interview Mailer</h3>
+            <a href="https://vanshguptax.github.io/FakeinterviewMailer/" target="_blank" class="text-blue-500 hover:text-blue-700">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">
+            Fake Interview Mailer generates customizable fake interview emails with a professional template and preview.
+        </div>
+        <div class=" px-6 py-3">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">HTML</span>
+            <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">CSS</span>
+            <span class="px-2 py-1 bg-blue-100 text-red-800 text-xs rounded-full">JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold">STUCIDE</h3>
+            <a href="https://vanshguptax.github.io/Stucide/" target="_blank" class="text-blue-500 hover:text-blue-700">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">
+            A dedicated platform for mental health awareness and support, offering resources, helplines, and a safe space for those in distress.
+          </p>
+        </div>
+        <div class=" px-6 py-3">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">HTML</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Tailwind</span>
+            <span class="px-2 py-1 bg-yellow-100 text-blue-800 text-xs rounded-full">JS</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Project 4 -->
+       <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold">Aura Color Predictor</h3>
+            <a href="aura-color-predictor.vercel.app" target="_blank" class="text-blue-500 hover:text-blue-700">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">
+            It assigns an aura color based on 10 personality questions, offering insights into your energy and traits.
+          </p>
+        </div>
+        <div class=" px-6 py-3">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">HTML</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Tailwind</span>
+            <span class="px-2 py-1 bg-yellow-100 text-blue-800 text-xs rounded-full">JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold">Quote Generator</h3>
+            <a href="https://vanshguptax.github.io/Quotes-Generator/index.html" target="_blank" class="text-blue-500 hover:text-blue-700">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">
+            A website that displays random quotes from selected categories, offering inspiration and motivation.
+        </div>
+        <div class=" px-6 py-3">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">HTML</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Tailwind</span>
+            <span class="px-2 py-1 bg-yellow-100 text-blue-800 text-xs rounded-full">JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold">Password Generator</h3>
+            <a href="https://vanshguptax.github.io/Password-Generator/" target="_blank" class="text-blue-500 hover:text-blue-700">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">
+            A website that generates strong, random passwords to enhance security and protect user accounts.
+          </p>
+        </div>
+        <div class=" px-6 py-3">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">HTML</span>
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Tailwind</span>
+            <span class="px-2 py-1 bg-yellow-100 text-blue-800 text-xs rounded-full">JS</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+
+  
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Ensure Home section is visible on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+
+            document.querySelector("form").addEventListener("submit", async function (event) {
+        event.preventDefault();
+        let form = event.target;
+        let formData = new FormData(form);
+
+        let response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+        });
+
+        if (response.ok) {
+            alert("Message sent successfully! ✅");
+            form.reset();
+        } else {
+            alert("Oops! Something went wrong. ❌");
+        }
+    });
+        });
+
+
+       
+    </script>
+    
+</body>
+</html>
